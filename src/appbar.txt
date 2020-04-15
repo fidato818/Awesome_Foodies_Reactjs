@@ -1,0 +1,83 @@
+          <AppBar color="default" position="fixed">
+            <Toolbar>
+              <IconButton
+                edge="start"
+                className={classes.menuButton}
+                color="inherit"
+                aria-label="Menu"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography variant="h6" className={classes.title}>
+                <Link to="/" className={classes.title}>
+                  {" "}
+                  818' The Foodist
+                </Link>
+              </Typography>
+
+              {/* <FormGroup>
+                <FormControlLabel
+                  control={
+                    <Switch
+                      checked={this.props.toggle}
+                      onChange={this.handleChange}
+                      aria-label="LoginSwitch"
+                    />
+                  }
+                  label={this.props.auth ? "logout" : "Login"}
+                />
+              </FormGroup> */}
+
+              {/* <Button color="inherit">
+                    <Link to="/SignupUser" className={classes.title}>
+                      Signup
+                    </Link>
+                  </Button> */}
+              {!this.state.displayEmail && (
+                <Button color="inherit">
+                  <Link to="/login/" className={classes.title}>
+                    Login
+                  </Link>
+                </Button>
+              )}
+              {/* <Button color="inherit">
+                    <Link to="/Dashuser/" className={classes.title}>
+                      DashUser
+                    </Link>
+                  </Button> */}
+              {this.state.displayEmail && (
+                <div>
+                  <IconButton
+                    aria-owns={open ? "menu-appbar" : undefined}
+                    aria-haspopup="true"
+                    onClick={this.handleMenu}
+                    color="inherit"
+                  >
+                    <AccountCircle />
+                  </IconButton>
+                  <Menu
+                    id="menu-appbar"
+                    anchorEl={anchorEl}
+                    anchorOrigin={{
+                      vertical: "top",
+                      horizontal: "right"
+                    }}
+                    transformOrigin={{
+                      vertical: "top",
+                      horizontal: "right"
+                    }}
+                    open={open}
+                    onClose={this.handleClose}
+                  >
+                    <MenuItem>User: {displayEmail}</MenuItem>
+                    <MenuItem onClick={this.handleClose}>Profile</MenuItem>
+                    <MenuItem onClick={this.handleClose}>My account</MenuItem>
+                    <MenuItem onClick={this.signoutFirebase}>Logout</MenuItem>
+                  </Menu>
+                </div>
+              )}
+              {/* <Button color="inherit">
+                <Link to="/MyRequests/">MyRequests</Link>
+              </Button> */}
+            </Toolbar>
+          </AppBar>
