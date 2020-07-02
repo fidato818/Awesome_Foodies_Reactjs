@@ -38,4 +38,6 @@ You can edit or add Your Restaurant Information such as Profile Picture, Restaur
 ## If you like my work. give it a star
 [Live Demo!](https://awsomefoodies.web.app/)
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I11VPVW)
+
 ![asd](https://user-images.githubusercontent.com/24269382/79644183-a62ea480-81c0-11ea-99e3-61a91ccfd96a.JPG)
